@@ -3,14 +3,8 @@
         <span class="name"> 您来到了未知领域 </span>
     </div>
 </template>
-<script>
-import { defineComponent } from 'vue'
+<script lang="ts" src="./notFound.ts">
 
-export default defineComponent({
-    setup() {
-        
-    },
-})
 </script>
 <style scoped>
 .name {

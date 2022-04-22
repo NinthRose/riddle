@@ -4,14 +4,7 @@
         <!-- 知乎： 是玫玖啊 -->
     </div>
 </template>
-<script>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    setup() {
-        
-    },
-})
+<script lang="ts" src="./working.ts">
 </script>
 
 <style scoped>
