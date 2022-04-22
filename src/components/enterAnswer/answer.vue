@@ -1,11 +1,12 @@
 <template>
     <div class="answer">
-        <riddle :level="3" msg="选择我 找到我" next="hide_and_seek"></riddle>
+        <riddle :level="3" msg="找到我" next="捉迷藏"></riddle>
         <div class="foot">
             <a v-if="!footVisible" type="primary" @click="statistic" style="height: 100%; font-size: 30px; color: #ffffff;" block ghost>Have a good time</a>
             <div v-else>
-                <a-button type="primary" @click="statistic" style="height: 50%" block>U found me!</a-button>
-                <span style="height: 50%">{{info}}</span>
+                <span style="height: 50%; font-size:large;">你找到我啦</span>
+                <br>
+                <span style="height: 50%; font-size:smaller;">这个游戏叫什么?</span>
             </div>
         </div>
     </div>

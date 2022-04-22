@@ -1,7 +1,8 @@
 <template>
     <div>
-        <span class="name"> 下一关开发中，出题请联系俺(联系方式在当前页面中) </span>
-        <!-- 知乎： 是玫玖啊 -->
+        <span class="name"> 下一关开发中，出题请联系俺</span>
+        <span class="name">(联系方式在当前页面中) </span>
+        <!-- 抖音: GT.小玖  -->
     </div>
 </template>
 <script lang="ts" src="./working.ts">

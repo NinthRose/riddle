@@ -8,6 +8,7 @@ export default defineComponent({
         onMounted(() => {
             routerMap.set('答案', 'answer')
             routerMap.set('入答案', 'enterAnswer')
+            routerMap.set('捉迷藏', 'hide_and_seek')
         })
         const routerMap = new Map()
         const answer = ref<string>('')
