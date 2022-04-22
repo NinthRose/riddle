@@ -4,18 +4,20 @@ import router from '../../router'
 
 export default defineComponent({
     props: ['level', 'msg', 'next'],
-    mounted() {
-        
-    },
     setup() {
+        onMounted(() => {
+            routerMap.set('答案', 'answer')
+            routerMap.set('入答案', 'enterAnswer')
+        })
+        const routerMap = new Map()
         const answer = ref<string>('')
         const answerChange = ():void => {
             message.success("恭喜过关")
-            if (answer.value === '答案') {
-                router.push(`/answer`)
-            } else {
-                router.push(`/${answer}`)
+            var path = answer.value
+            if (routerMap.has(answer.value)) {
+                path = routerMap.get(answer.value)
             }
+            router.push(`/${path}`)
         }
         return { answer, answerChange }
     },
