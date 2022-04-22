@@ -46,14 +46,16 @@
     font-size: 3vh;
 }
 .answer {
+    border-bottom: 1px solid #000000; 
     display: block;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    width: 100%;
-    height: 30%;
-    top: 60%;
+    width: 20%;
+    height: 10%;
+    top: 70%;
+    left: 40%;
     text-align: center;
     font-size: 3vh;
 }
