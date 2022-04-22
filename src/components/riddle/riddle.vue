@@ -8,7 +8,7 @@
         <a-progress class="progress"
             type="circle"
             :stroke-color="{ '0%': '#108ee9', '100%': '#87d068', }"
-            :percent="level/10" />
+            :percent="(level-1)*5" />
 
     </div>
 </template>

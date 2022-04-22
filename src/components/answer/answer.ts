@@ -4,12 +4,11 @@ import riddle from '../riddle/riddle.vue'
 export default defineComponent({
     components: { riddle },
     setup() {
-        defineProps<{ riddle: string, answer: string }>()
         const footVisible = ref<boolean>(false)
-        const info = ref<string>(' test \ntest')
+        const info = ref<string>('hide_and_seek')
         const statistic = ():void => {
             footVisible.value = !footVisible.value
         }
-        return { riddle, statistic, footVisible, info }
+        return { statistic, footVisible, info }
     },
 })

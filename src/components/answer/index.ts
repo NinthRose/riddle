@@ -1,3 +1,3 @@
-import Riddle from "./riddle.vue"
+import Answer from "./answer.vue"
 
-export default Riddle
+export default Answer

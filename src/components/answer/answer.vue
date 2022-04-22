@@ -1,7 +1,7 @@
 <template>
-    <div class="home">
+    <div class="answer">
+        <riddle :level="2" msg="请输 入答案" next="入答案"></riddle>
         <div class="foot">
-
             <a v-if="footVisible" type="primary" @click="statistic" style="height: 100%; font-size: 30px; color: #ffffff;" block ghost>Have a good time</a>
             <div v-else>
                 <a-button type="primary" @click="statistic" style="height: 50%" block>U found me!</a-button>
@@ -10,10 +10,10 @@
         </div>
     </div>
 </template>
-<script lang="ts" src="./home.ts">
+<script lang="ts" src="./answer.ts">
 </script>
 <style scoped>
-.home{
+.answer {
     width: 100%;
     height: 100%;
 }
